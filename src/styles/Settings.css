@@ -29,6 +29,7 @@
     border-radius: 50%;
     box-shadow: 6px 6px 12px black;
     background-color: #5056cc;
+    z-index: 10;
 }
 
 .settings:hover{

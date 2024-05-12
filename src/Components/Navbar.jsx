@@ -25,7 +25,7 @@ export function Navbar(){
             <NavDrawer styleBool={styleBool}/>
             <div className="nav flex main">
                 <div className="left flex">
-                    <div className="symbol link flex"><Link className="classlink">LW</Link></div>
+                    <div className="symbol link flex"><Link className="classlink" to={"/"}>LW</Link></div>
                     <div className="link flex"><Link className="classlink">Resume</Link></div>
                     <div className="link flex"><Link className="classlink">Classes</Link></div>
                     <div className="link flex"><Link className="classlink" to={"/Projects"}>Projects</Link></div>

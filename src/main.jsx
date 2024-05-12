@@ -4,6 +4,7 @@ import './index.css'
 import { Navbar } from './Components/Navbar.jsx';
 import { Projects } from './Components/Projects.jsx';
 import { Tutor } from "./Components/TypingTutor/Tutor.jsx"
+import { Compiler } from './Components/Compiler/Compiler.jsx';
 import {
   createHashRouter,
   RouterProvider,
@@ -22,6 +23,10 @@ const router = createHashRouter([
       {
         path: "/TypingTutor",
         element: <Tutor/>
+      },
+      {
+        path: "/Compiler",
+        element: <Compiler/>
       }
     ]
   },

@@ -3,16 +3,13 @@
     flex-direction: column;
 }
 
-.projects{
-    color: white;
-}
-
 .project{
     padding: 8px;
-    text-decoration: underline;
+    color: white;
+    text-decoration: none;
 }
 
 .project:hover{
     font-weight: bold;
-    transform: scale(1.1);
+    font-size: large;
 }
