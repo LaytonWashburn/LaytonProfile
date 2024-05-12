@@ -1,14 +1,27 @@
 import "../styles/Navbar.css"
-import { useState } from "react"
-import { NavDrawer } from "./NavDrawer"
-import { Settings } from "./Settings"
+import { useEffect, useState } from "react"
+import { NavDrawer } from "./NavDrawer.jsx"
+import { Settings } from "./Settings.jsx"
 import { Link } from "react-router-dom"
 import { Outlet } from "react-router-dom"
 
 export function Navbar(){
 
+    const [styleBool, setStyleBool] = useState(false);
+    
+
+    useEffect(() => {
+        setStyleBool(false);
+    })
+
+    function clicked(){
+        setStyleBool(true);
+    }
+
+
     return(
         <div>
+            <NavDrawer styleBool={styleBool}/>
             <div className="nav flex main">
                 <div className="left flex">
                     <div className="symbol link flex"><Link className="classlink">LW</Link></div>
@@ -21,7 +34,7 @@ export function Navbar(){
                 </div>
             </div>
             <div className="nav flex sub">
-                <button className="menu left">menu</button>
+                <button className="menu left" onClick={clicked}>menu</button>
             </div>
             <Outlet/>
             <Settings/>
