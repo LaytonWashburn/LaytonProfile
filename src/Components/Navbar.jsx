@@ -9,11 +9,12 @@ export function Navbar(){
 
     const [styleBool, setStyleBool] = useState(false);
     
-
+    // Run this to open the drawer / and keep track of the state of the styleBool
     useEffect(() => {
         setStyleBool(false);
     })
 
+    // If clicked, set the styleBool to true
     function clicked(){
         setStyleBool(true);
     }

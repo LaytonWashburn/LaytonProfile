@@ -87,7 +87,6 @@ button{
     white-space: nowrap;
     word-wrap: normal;
     direction: ltr;
-    -webkit-font-feature-settings: 'liga';
     -webkit-font-smoothing: antialiased;
     margin-left: 8px;
     margin-right: 8px;
