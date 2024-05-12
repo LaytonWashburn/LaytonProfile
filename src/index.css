@@ -1,3 +1,9 @@
 :root {
   background-color: #242424;
 }
+
+/*This sets the body to right under the nav bars main and sub*/
+body{
+  position: absolute;
+  top: 10.5%;
+}

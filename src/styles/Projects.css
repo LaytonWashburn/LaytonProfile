@@ -1,0 +1,18 @@
+.projectflex{
+    display: flex;
+    flex-direction: column;
+}
+
+.projects{
+    color: white;
+}
+
+.project{
+    padding: 8px;
+    text-decoration: underline;
+}
+
+.project:hover{
+    font-weight: bold;
+    transform: scale(1.1);
+}

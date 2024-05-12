@@ -28,7 +28,7 @@ export function Navbar(){
                     <div className="symbol link flex"><Link className="classlink">LW</Link></div>
                     <div className="link flex"><Link className="classlink">Resume</Link></div>
                     <div className="link flex"><Link className="classlink">Classes</Link></div>
-                    <div className="link flex"><Link className="classlink">Projects</Link></div>
+                    <div className="link flex"><Link className="classlink" to={"/Projects"}>Projects</Link></div>
                 </div>
                 <div className="right flex">
                     <div className="link flex"><Link className="classlink">Help</Link></div>
